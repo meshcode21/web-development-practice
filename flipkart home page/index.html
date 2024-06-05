@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Home Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav_container">
+            <div id="logo"><img src="images/logo.png" height="30px" alt="Logo"></div>
+            <div class="search"><input type="search" placeholder="Search for products, brands and more" name="s_box" id="s_box"><span class="material-symbols-outlined">
+                search
+            </span></div>
+            <div class="nav_list">
+                <ul>
+                    <li><span class="button">Login</span></li>
+                    <li>Become a Seller</li>
+                    <li>More</li>
+                    <li><span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>Cart</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="department_container">
+            <div>
+                <a href="#" class="dep_box"><img src="images/grocery.webp" alt=""><span>Grocery</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/mobile.webp" alt=""><span>Mobiles</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/fashion.webp" alt=""><span>Fashion</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/devices.webp" alt=""><span>Electronics</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/home.webp" alt=""><span>Home & Furinture</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/appliances.webp" alt=""><span>Appliances</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/aeroplane.webp" alt=""><span>Travel</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/toys.webp" alt=""><span>Beauty, Toys & More</span></a>
+            </div>
+            <div>
+                <a href="#" class="dep_box"><img src="images/two wheelers.webp" alt=""><span>Two Wheelers</span></a>
+            </div>
+        </div>
+
+        <div class="slider-box">
+            <div class="btns">
+                <button onclick="slideprev()"><span style="transform: rotate(180deg);" class="material-symbols-outlined">arrow_forward_ios</span></button>
+                <button onclick="slidenext()"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+            </div>
+            <div id="slider" class="slider">
+                <img src="images/slide1.webp" class="slideImg" alt="">
+                <img src="images/slide2.webp" class="slideImg" alt="">
+                <img src="images/slide3.webp" class="slideImg" alt="">
+                <img src="images/slide4.webp" class="slideImg" alt="">
+                <img src="images/slide5.webp" class="slideImg" alt="">
+                <img src="images/slide3.webp" class="slideImg" alt="">
+                <!-- <img src="images/slide6.webp" class="slideImg" alt=""> -->
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2007-2024 Flipkart.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

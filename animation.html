@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animetion</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        img {
+            animation: motion 1s ease-in-out infinite alternate;
+        }
+        
+        .container {
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .progress {
+            height: 2px;
+            background-color: red;
+            width: 0;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        
+        body:has(img:hover) .progress {
+            width: 100vw;
+        }
+        
+        @keyframes motion {
+            from {
+                width: 100px;
+                height: 100px;
+            }
+            to {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 70vw;
+            }
+            100% {
+                width: 100vw;
+            }
+        }
+        
+        .box {
+            width: 100px;
+            margin: 50px auto 0;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        h2 {
+            padding: 0px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        
+        .line {
+            height: 2px;
+            background-color: greenyellow;
+            transform: rotateY(90deg);
+            transition: all 0.5s ease-out;
+        }
+        
+        .box:hover {
+            transform: scale(2);
+        }
+        
+        .box:hover>.line,
+        .box:hover>h2 {
+            transform: rotateY(0deg);
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="box">
+        <h2>Mahesh</h2>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <img src="star.ico" alt="" width="100px" height="100px">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        .container {
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: red;
+            width: 80vw;
+        }
+        
+        .size {
+            width: 30%;
+            height: 40vh;
+            min-width: 200px;
+        }
+        
+        .box1 {
+            background-color: aqua;
+        }
+        
+        .box2 {
+            background-color: greenyellow;
+        }
+        
+        .box3 {
+            background-color: goldenrod;
+        }
+        
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: black;
+        }
+        
+        ul {
+            background: black;
+            height: 10px;
+            color: white;
+            font-size: large;
+        }
+        
+        li {
+            display: block;
+            float: left;
+            padding: 10px;
+            background-color: green;
+        }
+        
+        li:hover {
+            background: greenyellow;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li style="float: right;">Search</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1 size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam minus atque, error iure laboriosam sapiente eius dolores ipsa illo nesciunt dicta voluptatem animi. Quos laborum sint temporibus magnam unde?</div>
+        <div class="box2 size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus explicabo nam saepe officia laboriosam vitae dolorum quasi dicta. Reiciendis.</div>
+        <div class="box3 size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eligendi reiciendis consequatur, consectetur provident magni? Corrupti quasi eveniet deleniti labore quisquam unde, esse tenetur culpa!</div>
+    </div>
+</body>
+
+</html>
