@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Index</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        .indexBox {
+            height: 100vh;
+            width: 100vw;
+            background: url('My 1st website/images/hero.jpg') no-repeat;
+            background-position: top;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            min-width: 350px;
+            width: 550px;
+            height: 450px;
+            /* border: 2px solid rgb(31, 156, 240); */
+            box-shadow: 0 0 5px white;
+            background-color: rgba(49, 49, 49, 0.445);
+            border-radius: 20px;
+        }
+        
+        .container h2 {
+            border-bottom: 2px solid rgba(22, 147, 185, 0.534);
+            color: rgb(218, 218, 218);
+            height: 20%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container .list {
+            display: flex;
+            flex-direction: column;
+            /* background-color: green; */
+            height: 80%;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .container .list a {
+            background-color: rgb(156, 156, 156);
+            color: rgb(43, 43, 43);
+            font-weight: bold;
+            padding: 15px;
+            width: 250px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="indexBox">
+        <div class="container">
+            <h2>Index Content</h2>
+            <div class="list">
+                <a class="listItem" href="/dynamic website front page/">Dynamic website front page</a>
+                <a class="listItem" href="/flipkart home page/">flipkart home page</a>
+                <a class="listItem" href="/My 1st WebSite/">My 1st WebSite</a>
+                <a class="listItem" href="/Personal Website/">Personal Website</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
