@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.rotate-10 {
+    transform: rotate(-2deg);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .clock-container {
+        display: flex;
+        max-width: 500px;
+        position: relative;
+        border: 5px solid black;
+        box-shadow: 0 0 3px rgb(94, 94, 94), 0 0 10px red;
+        border-radius: 50%;
+        #clock_board {
+            width: 100%;
+            border-radius: inherit;
+        }
+        #hour_dial {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 4.5%;
+            transform-origin: 9.2% center;
+            transform: translate(-9.5%, -56%) rotate(-90deg);
+        }
+        #min_dial {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 4.5%;
+            transform-origin: 7.1% center;
+            transform: translate(-7.3%, -58%) rotate(-90deg);
+        }
+        #sec_dial {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 4%;
+            transform-origin: 24.6% center;
+            transform: translate(-24.6%, -58%) rotate(-90deg);
+            transition: all 1s ease-in-out;
+        }
+    }
+}
